@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Gradient</title>
+
+<style>
+
+/* ===== Reset básico ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== Fondo general ===== */
+body{
+    background:#d9d9d9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* ===== Contenedor principal ===== */
+.card{
+    width: 900px;
+    height:500px;
+    background: linear-gradient(135deg, #9b59b6, #e84393, #fdcb6e);
+    border-radius:4px;
+    box-shadow: 20px 20px 0px rgba(0,0,0,0.15);
+    padding:40px 60px;
+    color:white;
+    position:relative;
+}
+
+/* ===== Navbar ===== */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:80px;
+}
+
+.logo{
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    font-size:14px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    opacity:0.7;
+}
+
+/* ===== Hero Text ===== */
+.hero{
+    text-align:center;
+}
+
+.hero h1{
+    font-size:48px;
+    letter-spacing:2px;
+}
+
+.hero h2{
+    font-size:18px;
+    margin:10px 0 20px;
+    font-weight:300;
+    letter-spacing:3px;
+}
+
+.hero p{
+    font-size:14px;
+    width:60%;
+    margin:0 auto 30px;
+    line-height:1.6;
+}
+
+/* ===== Botón ===== */
+.btn{
+    display:inline-block;
+    padding:10px 25px;
+    border:2px solid white;
+    text-decoration:none;
+    color:white;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+    color:#e84393;
+}
+
+/* ===== Indicadores ===== */
+.dots{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:8px;
+}
+
+.dots span{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    border:2px solid white;
+}
+
+.dots span.active{
+    background:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">DESING STUDIO</div>
+        <div class="nav-links">
+            <a href="#">HOME</a>
+            <a href="#">FEATURES</a>
+            <a href="#">ABOUT</a>
+            <a href="#">SERVICE</a>
+            <a href="#">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1>WELCOME</h1>
+        <h2>DESIGNING YOUR VISION</h2>
+        <p>
+            Welcome to Design Studio. Where bold colors meet brilliant ideas. We transform abstract concepts into vibrant visual experiences. Explore our portfolio and see how we make brands stand out in a digital-first world.
+        </p>
+        <a href="#" class="btn">LEARN MORE</a>
+    </div>
+
+    <!-- Indicadores -->
+    <div class="dots">
+        <span></span>
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+    </div>
+
+</div>
+
+</body>
+</html>
